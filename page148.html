@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="./main.js"></script>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body class="has-zoom" style="/* position: absolute; left: calc(50% - 391.36px);  */">
+    
+<div class="textLayer" id="scale-custom" >
+    <span xmlns="http://www.w3.org/1999/xhtml" style="left: 215.995px; top: 148.792px; font-size: 24.0004px; font-family: sans-serif; transform: scaleX(0.91626);">Finally, at the end of chapter 2, I have added a map that s</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 776.645px; top: 148.792px; font-size: 24.0004px; font-family: sans-serif; transform: scaleX(0.894192);">ums up Haussmann’s </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 143.994px; top: 178.073px; font-size: 24.0004px; font-family: sans-serif; transform: scaleX(0.929105);">transformation of the road map of the city.  You will see that he did not simply run roads across </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 143.994px; top: 207.353px; font-size: 24.0004px; font-family: sans-serif; transform: scaleX(0.95899);">the city</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 216.715px; top: 207.353px; font-size: 24.0004px; font-family: sans-serif; transform: scaleX(0.924831);"> in different directions.  He used old and new roads to patch together his plan to make </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 143.994px; top: 236.634px; font-size: 24.0004px; font-family: sans-serif; transform: scaleX(0.92838);">travel around the city vastly easier than it had been when he arrived and to connect the city, </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 143.994px; top: 265.914px; font-size: 24.0004px; font-family: sans-serif; transform: scaleX(0.927231);">which was the center of French government and commerce, to the regions of the country.  </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 143.994px; top: 295.195px; font-size: 24.0004px; font-family: sans-serif; transform: scaleX(0.91449);">Keep in mind that France does not and did not have a federal system, one in which local </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 143.994px; top: 324.475px; font-size: 24.0004px; font-family: sans-serif; transform: scaleX(0.911909);">provinces govern themselves.</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 433.439px; top: 324.475px; font-size: 24.0004px; font-family: sans-serif; transform: scaleX(0.923376);">  There are local governments, but the central government </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 143.994px; top: 353.756px; font-size: 24.0004px; font-family: sans-serif; transform: scaleX(0.927018);">controls all the significant functions and can do pretty much what it pleases.</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 597px; top: 1530.19px; font-size: 20.0002px; font-family: serif; transform: scaleX(1.00001);">148</span>
+</div>
+
+<img src="./img/page148.jpg" class="imgReference"/>
+
+<button class="btn previousPage" onclick="lastPage();">Previous Page</button>
+<button class="btn nextPage" onclick="nextPage();">Next Page</button>
+    
+<script>
+    function nextPage(){
+        var index = window.location.href.indexOf('page')+4; 
+        var currentPage = window.location.href.substring(index, window.location.href.indexOf('.', index)); 
+        window.location.href = window.location.href.substring(0, window.location.href.indexOf('page')+4)+(eval(currentPage)+1)+'.html';
+    }
+    function lastPage(){
+        var index = window.location.href.indexOf('page')+4; 
+        var currentPage = window.location.href.substring(index, window.location.href.indexOf('.', index)); 
+        window.location.href = window.location.href.substring(0, window.location.href.indexOf('page')+4)+(eval(currentPage)-1)+'.html';
+    }
+</script>
+
+
+</body>
+
+</html>

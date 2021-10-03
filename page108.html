@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="./main.js"></script>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body class="has-zoom" style="/* position: absolute; left: calc(50% - 391.36px);  */">
+    
+<div class="textLayer" id="scale-custom" >
+    <span xmlns="http://www.w3.org/1999/xhtml" style="left: 347.493px; top: 1398.44px; font-size: 22.592px; font-family: serif; transform: scaleX(0.895091);">Fig. </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 393.536px; top: 1398.44px; font-size: 22.592px; font-family: serif; transform: scaleX(0.821391);">8. </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 419.047px; top: 1398.44px; font-size: 22.592px; font-family: serif; transform: scaleX(1.0934);">Aerial </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 488.683px; top: 1398.44px; font-size: 22.592px; font-family: serif; transform: scaleX(1.08234);">View </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 547.382px; top: 1398.44px; font-size: 22.592px; font-family: serif; transform: scaleX(1.14363);">of </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 573.293px; top: 1398.44px; font-size: 22.592px; font-family: serif; transform: scaleX(1.08202);">Piazza </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 644.977px; top: 1398.44px; font-size: 22.592px; font-family: serif; transform: scaleX(1.07931);">del Popolo, </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 766.564px; top: 1398.44px; font-size: 22.592px; font-family: serif; transform: scaleX(1.07643);">Rome. </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 597.001px; top: 1530.19px; font-size: 20.0002px; font-family: serif; transform: scaleX(1.00001);">108</span>
+</div>
+
+<img src="./img/page108.jpg" class="imgReference"/>
+
+<button class="btn previousPage" onclick="lastPage();">Previous Page</button>
+<button class="btn nextPage" onclick="nextPage();">Next Page</button>
+    
+<script>
+    function nextPage(){
+        var index = window.location.href.indexOf('page')+4; 
+        var currentPage = window.location.href.substring(index, window.location.href.indexOf('.', index)); 
+        window.location.href = window.location.href.substring(0, window.location.href.indexOf('page')+4)+(eval(currentPage)+1)+'.html';
+    }
+    function lastPage(){
+        var index = window.location.href.indexOf('page')+4; 
+        var currentPage = window.location.href.substring(index, window.location.href.indexOf('.', index)); 
+        window.location.href = window.location.href.substring(0, window.location.href.indexOf('page')+4)+(eval(currentPage)-1)+'.html';
+    }
+</script>
+
+
+</body>
+
+</html>

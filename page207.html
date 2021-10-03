@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="./main.js"></script>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body class="has-zoom" style="/* position: absolute; left: calc(50% - 391.36px);  */">
+    
+<div class="textLayer" id="scale-custom" >
+    <span xmlns="http://www.w3.org/1999/xhtml" style="left: 174.009px; top: 228.183px; font-size: 48.013px; font-family: serif; transform: scaleX(1.0172);">Map 13</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 195.173px; top: 141.423px; font-size: 17.319px; font-family: sans-serif; transform: scaleX(1.03812);">Paris </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 240.86px; top: 141.423px; font-size: 17.319px; font-family: sans-serif; transform: scaleX(1.05205);">City Centre </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 222.815px; top: 163.21px; font-size: 4.6944px; font-family: monospace; transform: scaleX(3.50464);">~1</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 243.94px; top: 163.21px; font-size: 4.6944px; font-family: monospace;">:</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 247.216px; top: 163.21px; font-size: 4.6944px; font-family: monospace; transform: scaleX(1.01985);">211000(1C.•200111) </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1408.6px; top: 201.69px; font-size: 8.4498px; font-family: monospace; transform: scaleX(1.48341);">~· </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 146.285px; top: 280.555px; font-size: 13.1444px; font-family: monospace; transform: scaleX(0.238412);">-t</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 149.578px; top: 280.555px; font-size: 13.1444px; font-family: monospace; transform: scaleX(1.17715);">&lt;"~~ </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 184.867px; top: 259.166px; font-size: 38.7532px; font-family: serif; transform: scaleX(1.00008);">. </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 156.316px; top: 273.331px; font-size: 34.9808px; font-family: serif; transform: scaleX(0.355325);">..</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 165.731px; top: 273.331px; font-size: 34.9808px; font-family: serif; transform: scaleX(1.00034);">. </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 154.276px; top: 306.845px; font-size: 7.9804px; font-family: monospace; transform: scaleX(0.589039);">""</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 158.031px; top: 306.845px; font-size: 7.9804px; font-family: monospace; transform: scaleX(1.22709);">~._.</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 186.188px; top: 306.845px; font-size: 7.9804px; font-family: monospace; transform: scaleX(0.589039);">., </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 53.8132px; top: 597px; font-size: 20.0002px; font-family: serif; transform: rotate(90deg) scaleX(1.00001);">207</span>
+</div>
+
+<img src="./img/page207.jpg" class="imgReference"/>
+
+<button class="btn previousPage" onclick="lastPage();">Previous Page</button>
+<button class="btn nextPage" onclick="nextPage();">Next Page</button>
+    
+<script>
+    function nextPage(){
+        var index = window.location.href.indexOf('page')+4; 
+        var currentPage = window.location.href.substring(index, window.location.href.indexOf('.', index)); 
+        window.location.href = window.location.href.substring(0, window.location.href.indexOf('page')+4)+(eval(currentPage)+1)+'.html';
+    }
+    function lastPage(){
+        var index = window.location.href.indexOf('page')+4; 
+        var currentPage = window.location.href.substring(index, window.location.href.indexOf('.', index)); 
+        window.location.href = window.location.href.substring(0, window.location.href.indexOf('page')+4)+(eval(currentPage)-1)+'.html';
+    }
+</script>
+
+
+</body>
+
+</html>

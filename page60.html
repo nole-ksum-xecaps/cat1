@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="./main.js"></script>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body class="has-zoom" style="/* position: absolute; left: calc(50% - 391.36px);  */">
+    
+<div class="textLayer" id="scale-custom" >
+    <span xmlns="http://www.w3.org/1999/xhtml" style="left: 602px; top: 1530.19px; font-size: 20.0002px; font-family: serif; transform: scaleX(1.00001);">60</span>
+</div>
+
+<img src="./img/page60.jpg" class="imgReference"/>
+
+<button class="btn previousPage" onclick="lastPage();">Previous Page</button>
+<button class="btn nextPage" onclick="nextPage();">Next Page</button>
+    
+<script>
+    function nextPage(){
+        var index = window.location.href.indexOf('page')+4; 
+        var currentPage = window.location.href.substring(index, window.location.href.indexOf('.', index)); 
+        window.location.href = window.location.href.substring(0, window.location.href.indexOf('page')+4)+(eval(currentPage)+1)+'.html';
+    }
+    function lastPage(){
+        var index = window.location.href.indexOf('page')+4; 
+        var currentPage = window.location.href.substring(index, window.location.href.indexOf('.', index)); 
+        window.location.href = window.location.href.substring(0, window.location.href.indexOf('page')+4)+(eval(currentPage)-1)+'.html';
+    }
+</script>
+
+
+</body>
+
+</html>

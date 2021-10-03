@@ -1,0 +1,628 @@
+
+    * { margin: 0; padding: 0; }
+
+    .textLayer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* overflow: hidden; */
+    line-height: 1.0;
+    }
+    
+    .textLayer > span {
+    color: black;
+    position: absolute;
+    white-space: pre;
+    cursor: text;
+    transform-origin: 0% 0%;
+    }
+    
+    .annotationLayer section {
+    position: absolute;
+    }
+    
+    .annotationLayer .linkAnnotation > a,
+    .annotationLayer .buttonWidgetAnnotation.pushButton > a {
+    position: absolute;
+    font-size: 1em;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+    
+    .annotationLayer .buttonWidgetAnnotation.pushButton > a:hover {
+    opacity: 0.2;
+    background: #ff0;
+    box-shadow: 0px 2px 10px #ff0;
+    }
+    
+    .annotationLayer .textAnnotation img {
+    position: absolute;
+    cursor: pointer;
+    }
+    
+    .annotationLayer .textWidgetAnnotation input,
+    .annotationLayer .textWidgetAnnotation textarea,
+    .annotationLayer .choiceWidgetAnnotation select,
+    .annotationLayer .buttonWidgetAnnotation.checkBox input,
+    .annotationLayer .buttonWidgetAnnotation.radioButton input {
+    background-color: rgba(0, 54, 255, 0.13);
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    font-size: 9px;
+    height: 100%;
+    margin: 0;
+    padding: 0 3px;
+    vertical-align: top;
+    width: 100%;
+    }
+    
+    .annotationLayer .choiceWidgetAnnotation select option {
+    padding: 0;
+    }
+    
+    .annotationLayer .buttonWidgetAnnotation.radioButton input {
+    border-radius: 50%;
+    }
+    
+    .annotationLayer .textWidgetAnnotation textarea {
+    font: message-box;
+    font-size: 9px;
+    resize: none;
+    }
+    
+    .annotationLayer .textWidgetAnnotation input[disabled],
+    .annotationLayer .textWidgetAnnotation textarea[disabled],
+    .annotationLayer .choiceWidgetAnnotation select[disabled],
+    .annotationLayer .buttonWidgetAnnotation.checkBox input[disabled],
+    .annotationLayer .buttonWidgetAnnotation.radioButton input[disabled] {
+    background: none;
+    border: 1px solid transparent;
+    cursor: not-allowed;
+    }
+    
+    .annotationLayer .textWidgetAnnotation input:hover,
+    .annotationLayer .textWidgetAnnotation textarea:hover,
+    .annotationLayer .choiceWidgetAnnotation select:hover,
+    .annotationLayer .buttonWidgetAnnotation.checkBox input:hover,
+    .annotationLayer .buttonWidgetAnnotation.radioButton input:hover {
+    border: 1px solid #000;
+    }
+    
+    .annotationLayer .textWidgetAnnotation input:focus,
+    .annotationLayer .textWidgetAnnotation textarea:focus,
+    .annotationLayer .choiceWidgetAnnotation select:focus {
+    background: none;
+    border: 1px solid transparent;
+    }
+    
+    .annotationLayer .buttonWidgetAnnotation.checkBox input:checked:before,
+    .annotationLayer .buttonWidgetAnnotation.checkBox input:checked:after,
+    .annotationLayer .buttonWidgetAnnotation.radioButton input:checked:before {
+    background-color: #000;
+    content: '';
+    display: block;
+    position: absolute;
+    }
+    
+    .annotationLayer .buttonWidgetAnnotation.checkBox input:checked:before,
+    .annotationLayer .buttonWidgetAnnotation.checkBox input:checked:after {
+    height: 80%;
+    left: 45%;
+    width: 1px;
+    }
+    
+    .annotationLayer .buttonWidgetAnnotation.checkBox input:checked:before {
+    transform: rotate(45deg);
+    }
+    
+    .annotationLayer .buttonWidgetAnnotation.checkBox input:checked:after {
+    transform: rotate(-45deg);
+    }
+    
+    .annotationLayer .buttonWidgetAnnotation.radioButton input:checked:before {
+    border-radius: 50%;
+    height: 50%;
+    left: 30%;
+    top: 20%;
+    width: 50%;
+    }
+    
+    .annotationLayer .textWidgetAnnotation input.comb {
+    font-family: monospace;
+    padding-left: 2px;
+    padding-right: 0;
+    }
+    
+    .annotationLayer .textWidgetAnnotation input.comb:focus {
+    
+    width: 115%;
+    }
+    
+    .annotationLayer .buttonWidgetAnnotation.checkBox input,
+    .annotationLayer .buttonWidgetAnnotation.radioButton input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+          appearance: none;
+    padding: 0;
+    }
+    
+    .annotationLayer .popupWrapper {
+    position: absolute;
+    width: 20em;
+    }
+    
+    .annotationLayer .popup {
+    position: absolute;
+    z-index: 200;
+    max-width: 20em;
+    background-color: #FFFF99;
+    box-shadow: 0px 2px 5px #888;
+    border-radius: 2px;
+    padding: 6px;
+    margin-left: 5px;
+    cursor: pointer;
+    font: message-box;
+    font-size: 9px;
+    word-wrap: break-word;
+    }
+    
+    .annotationLayer .popup > * {
+    font-size: 9px;
+    }
+    
+    .annotationLayer .popup h1 {
+    display: inline-block;
+    }
+    
+    .annotationLayer .popup span {
+    display: inline-block;
+    margin-left: 5px;
+    }
+    
+    .annotationLayer .popup p {
+    border-top: 1px solid #333;
+    margin-top: 2px;
+    padding-top: 2px;
+    }
+    
+    .annotationLayer .highlightAnnotation,
+    .annotationLayer .underlineAnnotation,
+    .annotationLayer .squigglyAnnotation,
+    .annotationLayer .strikeoutAnnotation,
+    .annotationLayer .freeTextAnnotation,
+    .annotationLayer .lineAnnotation svg line,
+    .annotationLayer .squareAnnotation svg rect,
+    .annotationLayer .circleAnnotation svg ellipse,
+    .annotationLayer .polylineAnnotation svg polyline,
+    .annotationLayer .polygonAnnotation svg polygon,
+    .annotationLayer .caretAnnotation,
+    .annotationLayer .inkAnnotation svg polyline,
+    .annotationLayer .stampAnnotation,
+    .annotationLayer .fileAttachmentAnnotation {
+    cursor: pointer;
+    }
+    
+    @namespace epub "http://www.idpf.org/2007/ops";
+    
+    /* We'll throw parser errors instead of showing them to the user. */
+    parsererror {
+    display: none !important;
+    }
+    
+    /* RS Pub Positioning */
+    html {
+    margin: 0 !important;
+    padding: 0 !important;
+    }
+    
+    body {
+    margin: 0;
+    padding: 0;
+    /* overflow-y: hidden; */
+    top: 0;
+    -webkit-text-size-adjust: 100%;
+    -webkit-touch-callout: none; /* Disables iOS touch-hold save image menu */
+    }
+    
+    body.has-zoom {
+    margin: 0 !important;
+    max-width: none !important;
+    }
+    
+    body.readium-enabled {
+    margin: 0 !important;
+    overflow-x: hidden;
+    }
+    
+    :root[style*="readium-font-on"][style*="--USER__fontFamily"] body.readium-enabled * {
+    font-family: inherit;
+    }
+    
+    body img {
+    max-width: 100% !important;
+    height: auto !important;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    }
+    
+    body math, body .mjx-chtml, body .MathJax_CHTML {
+    user-select: none;
+    }
+    
+    body iframe {
+    min-height: 400px;
+    overflow-y: auto;
+    }
+    
+    body.selecting-text-touch {
+    -webkit-user-select: none;
+    user-select: none;
+    overflow-x: hidden !important;
+    }
+    
+    body.readium-enabled table {
+    table-layout: fixed;
+    width: 100%;
+    }
+    
+    @media print {
+    body.is-printing {
+        width: calc(100% - 3em) !important;
+        transform: none !important;
+        transform-origin: initial !important;
+    }
+    
+    body.is-printing::after {
+        content: attr(data-print-watermark);
+        position: fixed;
+        z-index: 501; /* going off of z-indexes defined in reader-app/app/styles/_variables.scss (which this css file does not have access to) */
+        transform: rotate(90deg);
+        top: 50%;
+        transform-origin: right;
+        right: .5em;
+    }
+    
+    body.is-printing ~ .rs-text-highlight {
+        display: none !important;
+    }
+    }
+    
+    
+    #MathJax_Message {
+    display: none !important;
+    user-select: none;
+    }
+    
+    
+    body .cpl-html {
+    position: relative;
+    width: 1000px;
+    }
+    
+    /*
+    
+    highlight colors
+    
+    $highlight-blue-full:     #006A94;
+    $highlight-red-full:      #C20114;
+    $highlight-yellow-full:   #FFBA08;
+    $highlight-green-full:    #8EA604;
+    
+    $highlight-blue:          rgba($highlight-blue-full, 0.3);
+    $highlight-red:           rgba($highlight-red-full, 0.3);
+    $highlight-yellow:        rgba($highlight-yellow-full, 0.3);
+    $highlight-green:         rgba($highlight-green-full, 0.3);
+    
+    */
+    
+    .rs-text-highlight {
+    z-index: 300;
+    position: absolute;
+    pointer-events: none;
+    display: flex;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: transparent !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    }
+    
+    .rs-text-highlight.copied-text-style {
+    z-index: 200;
+    }
+    
+    .rs-text-highlight svg {
+    transition: fill .3s;
+    opacity: .25;
+    cursor: pointer;
+    stroke-width: 2px;
+    width: initial; /* resets any width set by the ePub on svg widths */
+    height: initial; /* resets any height set by the ePub on svg widths */
+    display: initial; /* resets any display set by the ePub on svg widths */
+    border: initial; /* resets any border set by the ePub on svg widths */
+    float: initial; /* resets any float set by the ePub on svg widths */
+    
+    }
+    
+    .rs-text-highlight svg:hover {
+    opacity: .35;
+    }
+    
+    .rs-text-highlight svg rect {
+    pointer-events: all;
+    }
+    
+    .rs-text-highlight.is-highlighting svg rect {
+    pointer-events: none;
+    }
+    
+    .rs-text-highlight.is-focused {
+    outline-width: 3px;
+    outline-style: solid;
+    }
+    
+    .rs-text-highlight.copied-text-style svg {
+    position: absolute;
+    }
+    
+    .rs-text-highlight.copied-text-style svg rect {
+    fill: none;
+    stroke-width: 2;
+    stroke: black;
+    }
+    
+    .rs-text-highlight.unsaved {
+    fill: rgb(124, 134, 146);
+    outline-color: rgb(124, 134, 146);
+    stroke: rgb(124, 134, 146);
+    }
+    
+    ::selection {
+    background: rgba(124, 134, 146, 0.25);
+    }
+    
+    ::-moz-selection {
+    background: rgba(124, 134, 146, 0.25);
+    }
+    
+    .rs-text-highlight.red, .rs-text-highlight.light-orange {
+    fill: #e0193f;
+    outline-color: #e0193f;
+    stroke: #e0193f;
+    }
+    
+    .rs-text-highlight.blue, .rs-text-highlight.light-blue {
+    fill: #0075bc;
+    outline-color: #0075bc;
+    stroke: #0075bc;
+    }
+    
+    .rs-text-highlight.yellow, .rs-text-highlight.light-yellow {
+    fill: #FFBA08;
+    outline-color: #FFBA08;
+    stroke: #FFBA08;
+    }
+    
+    .rs-text-highlight.green, .rs-text-highlight.light-green {
+    fill: #4cbf08;
+    outline-color: #4cbf08;
+    stroke: #4cbf08;
+    }
+    
+    .rs-text-highlight-hide-for-element-search {
+    pointer-events: none !important;
+    }
+    
+    .rs-text-highlight-hide-for-element-search * {
+    pointer-events: none !important;
+    }
+    
+    @keyframes search-result-svg {
+    from {
+        opacity: .6;
+    }
+    to {
+        opacity: .25;
+    }
+    }
+    
+    @keyframes search-result-container {
+    from {
+        transform: scale(1.5);
+    }
+    to {
+        transform: scale(1);
+        box-shadow: none;
+    }
+    }
+    
+    .rs-text-highlight.search-result {
+    outline-width: 2px;
+    outline-style: solid;
+    outline-color: yellow;
+    animation: search-result-container;
+    animation-duration: 2s;
+    pointer-events: none;
+    }
+    
+    .rs-text-highlight.search-result svg {
+    pointer-events: none;
+    animation: search-result-svg;
+    animation-duration: 5s;
+    fill: yellow;
+    }
+    
+    .is-tts-active {
+    background-color: rgba(227, 242, 246, 0.3);
+    box-shadow: 0 0 4px rgba(0, 40, 80, .5);
+    }
+    
+    svg.tts-underline {
+    overflow: visible;
+    position: absolute;
+    fill: black;
+    }
+    
+    :root[style*="readium-night-on"] svg.tts-underline {
+    fill: white;
+    }
+    
+    /*
+    
+    LAYOUT AND STYLING FOR CONVERTED PDFs
+    
+    */
+    
+    body .cpl-html .page-image {
+    width: 1000px;
+    background: white;
+    border: 1px solid #FAFAFA;
+    box-shadow: 0 0 3px #D0D0D0;
+    margin-top: 3px;
+    }
+    
+    body .page-html {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    }
+    
+    .cpl-html b::selection {
+    color: transparent;
+    background: rgba(180, 213, 255, .4);
+    }
+    
+    .cpl-html .tn {
+    position: absolute;
+    overflow: hidden;
+    color: transparent;
+    z-index: 1;
+    }
+    
+    .old-anno-html {
+    position: absolute;
+    top: 0px;
+    user-select: none;
+    }
+    
+    .old-anno-html b.tn {
+    z-index: 0;
+    position: absolute;
+    color: transparent;
+    }
+    
+    .old-anno-html b.tn.rs-old-highlight {
+    z-index: 2;
+    cursor: pointer;
+    }
+    
+    .old-anno-html b {
+    opacity: .25;
+    }
+    
+    .old-anno-html .light-yellow, .old-anno-html .yellow {
+    background-color: #FFBA08 !important;
+    }
+    
+    .old-anno-html .light-orange, .old-anno-html .red {
+    background-color: #e0193f;
+    }
+    
+    .old-anno-html .light-green, .old-anno-html .green {
+    background-color: #4cbf08;
+    }
+    
+    .old-anno-html .light-blue, .old-anno-html-blue {
+    background: #0075bc;
+    }
+    
+    .link-html {
+    position: relative;
+    width: 1000px;
+    z-index: 2; /* This must be higher than .cpl-html */
+    }
+    
+    .link-html a {
+    position: absolute;
+    }
+    
+    .link-html a span {
+    display: none;
+    }
+    
+    .page-image {
+    pointer-events: none;
+    }
+    
+    .page-image::selection {
+    background: transparent;
+    }
+    
+    /*
+    PAGE BREAKS FOR EPUBS THAT DO NOT FOLLOW SPEC
+    */
+    
+    *[epub|type~='pagebreak'][hidden] {
+    display: inline !important;
+    visibility: hidden !important;
+    }
+    
+    /*
+    Screen-reader only visibility for within the iframe
+    Automatically generated pagebreaks need to also use this style so that they can have focus.
+    */
+    
+    .rs-screen-reader-only, .rs-auto-pagebreak {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    }
+    
+    /*
+    Fix an issue with PDFs while using a high-contrast browser plugin
+    This was also added to template.css in pdfjs-epub-builder, but replicated here to avoid reprocessing.
+    */
+    .textLayer, .annotationLayer {
+    z-index: 1;
+    }
+    .annotationLayer {
+    position: relative;
+    }
+
+
+    #scale-custom{
+        transform: translate(0px, 0px) scale(0.75);
+        transform-origin: left top;
+    }
+
+    .imgReference{
+        margin-left: 932px;
+        height: 100vh;
+    }
+
+    .btn{
+        position:absolute;
+        bottom: 10px;
+        font-size: 25px;
+        z-index: 999;
+        padding: 8px;
+    } 
+    
+    .previousPage{
+        left: 10px;
+    }
+    .nextPage{
+        left: 202px;
+
+}

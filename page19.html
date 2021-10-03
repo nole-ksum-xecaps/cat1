@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="./main.js"></script>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body class="has-zoom" style="/* position: absolute; left: calc(50% - 391.36px);  */">
+    
+<div class="textLayer" id="scale-custom" >
+    <span xmlns="http://www.w3.org/1999/xhtml" style="left: 167.394px; top: 180.957px; font-size: 22.8002px; font-family: sans-serif; transform: scaleX(0.949485);">present to</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 263.611px; top: 180.957px; font-size: 22.8002px; font-family: sans-serif; transform: scaleX(0.920583);"> you is his use of the technical terms of art history; he was a leading art historian of </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 167.394px; top: 208.773px; font-size: 22.8002px; font-family: sans-serif; transform: scaleX(0.923271);">his time (1897</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 299.635px; top: 208.773px; font-size: 22.8002px; font-family: sans-serif; transform: scaleX(0.896986);">-1994).  </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 235.795px; top: 264.406px; font-size: 22.8002px; font-family: sans-serif; transform: scaleX(0.915232);">Krautheimer was a refugee from the Nazis who came to the United States in the 1930s.  </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 167.394px; top: 292.222px; font-size: 22.8002px; font-family: sans-serif; transform: scaleX(0.913102);">Much of his career was spent as a professor in the Institute of Fine Arts at NYU.  After he </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 167.394px; top: 320.038px; font-size: 22.8002px; font-family: sans-serif; transform: scaleX(0.922691);">retired, he moved to Rome.  The book from which we are reading was the product of his </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 167.394px; top: 347.855px; font-size: 22.8002px; font-family: sans-serif; transform: scaleX(0.915631);">lifelong studies of Roman churches and of his love for the city.  Into his 90s, he walked every </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 167.394px; top: 375.671px; font-size: 22.8002px; font-family: sans-serif; transform: scaleX(0.915958);">day from his apartment near the Piazza</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 531.513px; top: 375.671px; font-size: 22.8002px; font-family: sans-serif; transform: scaleX(0.932544);"> di Spagna in the northern part of the old city to the </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 167.394px; top: 403.715px; font-size: 22.8002px; font-family: sans-serif; transform: scaleX(0.917139);">Vatican Library to do research for this book and some scholarly projects.  </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 235.795px; top: 459.347px; font-size: 22.8002px; font-family: sans-serif; transform: scaleX(0.933985);">As noted, while you read this work you will find Krautheimer using terms that part of the </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 167.394px; top: 487.164px; font-size: 22.8002px; font-family: sans-serif; transform: scaleX(0.926852);">language of art history.  When you</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 487.737px; top: 487.164px; font-size: 22.8002px; font-family: sans-serif; transform: scaleX(0.916796);"> come across a word that puzzles you or that you think you </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 167.394px; top: 514.98px; font-size: 22.8002px; font-family: sans-serif; transform: scaleX(0.924589);">need to know to understand the point he is making, look it up.  I do the same when I read </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 167.394px; top: 542.796px; font-size: 22.8002px; font-family: sans-serif; transform: scaleX(0.932656);">Krautheimer.  The effort is worth it.  This book will probably be the first great scholarly work </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 167.394px; top: 570.612px; font-size: 22.8002px; font-family: sans-serif; transform: scaleX(0.90932);">you read.  </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 265.435px; top: 570.612px; font-size: 22.8002px; font-family: sans-serif; transform: scaleX(0.930158);">Among other things, it is your introduction to what serious scholars do.</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 602px; top: 1530.19px; font-size: 20.0002px; font-family: serif; transform: scaleX(1.00001);">19</span>
+</div>
+
+<img src="./img/page19.jpg" class="imgReference"/>
+
+<button class="btn previousPage" onclick="lastPage();">Previous Page</button>
+<button class="btn nextPage" onclick="nextPage();">Next Page</button>
+    
+<script>
+    function nextPage(){
+        var index = window.location.href.indexOf('page')+4; 
+        var currentPage = window.location.href.substring(index, window.location.href.indexOf('.', index)); 
+        window.location.href = window.location.href.substring(0, window.location.href.indexOf('page')+4)+(eval(currentPage)+1)+'.html';
+    }
+    function lastPage(){
+        var index = window.location.href.indexOf('page')+4; 
+        var currentPage = window.location.href.substring(index, window.location.href.indexOf('.', index)); 
+        window.location.href = window.location.href.substring(0, window.location.href.indexOf('page')+4)+(eval(currentPage)-1)+'.html';
+    }
+</script>
+
+
+</body>
+
+</html>

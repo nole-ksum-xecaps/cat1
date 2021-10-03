@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="./main.js"></script>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body class="has-zoom" style="/* position: absolute; left: calc(50% - 391.36px);  */">
+    
+<div class="textLayer" id="scale-custom" >
+    <span xmlns="http://www.w3.org/1999/xhtml" style="left: 280.97px; top: 193.561px; font-size: 17.9898px; font-family: serif; transform: scaleX(1.50238);">THE</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 345.233px; top: 193.561px; font-size: 17.9898px; font-family: serif; transform: scaleX(1.45023);">LUST</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 421.698px; top: 193.561px; font-size: 17.9898px; font-family: serif; transform: scaleX(1.39748);">FOR</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 481.788px; top: 193.561px; font-size: 17.9898px; font-family: serif; transform: scaleX(1.42689);">POWER</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 930.906px; top: 190.005px; font-size: 21.6364px; font-family: sans-serif; transform: scaleX(1.00025);">894</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 184.66px; top: 231.621px; font-size: 25.04px; font-family: serif; transform: scaleX(1.04817);">and they knew you, where you could make a stand against the swirling, fear-</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 183.383px; top: 260.792px; font-size: 25.04px; font-family: serif; transform: scaleX(1.06864);">some tides of the sea of life, only the very old, too poor to move, still lived,</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 182.306px; top: 291.141px; font-size: 25.04px; font-family: serif; transform: scaleX(1.00054);">almost</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 260.18px; top: 291.141px; font-size: 25.04px; font-family: serif; transform: scaleX(1.04676);">barricaded</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 378.97px; top: 291.141px; font-size: 25.04px; font-family: serif; transform: scaleX(1.0419);">in their freezing</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 555.703px; top: 291.141px; font-size: 25.04px; font-family: serif; transform: scaleX(1.03754);">apartments.</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 686.011px; top: 291.141px; font-size: 25.04px; font-family: serif; transform: scaleX(1.08467);">As for the rest of the people</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 182.506px; top: 321.489px; font-size: 25.04px; font-family: serif; transform: scaleX(1.06011);">who had lived there, they were gone.</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 597px; top: 1530.19px; font-size: 20.0002px; font-family: serif; transform: scaleX(1.00001);">337</span>
+</div>
+
+<img src="./img/page337.jpg" class="imgReference"/>
+
+<button class="btn previousPage" onclick="lastPage();">Previous Page</button>
+<button class="btn nextPage" onclick="nextPage();">Next Page</button>
+    
+<script>
+    function nextPage(){
+        var index = window.location.href.indexOf('page')+4; 
+        var currentPage = window.location.href.substring(index, window.location.href.indexOf('.', index)); 
+        window.location.href = window.location.href.substring(0, window.location.href.indexOf('page')+4)+(eval(currentPage)+1)+'.html';
+    }
+    function lastPage(){
+        var index = window.location.href.indexOf('page')+4; 
+        var currentPage = window.location.href.substring(index, window.location.href.indexOf('.', index)); 
+        window.location.href = window.location.href.substring(0, window.location.href.indexOf('page')+4)+(eval(currentPage)-1)+'.html';
+    }
+</script>
+
+
+</body>
+
+</html>

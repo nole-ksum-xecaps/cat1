@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="./main.js"></script>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body class="has-zoom" style="/* position: absolute; left: calc(50% - 391.36px);  */">
+    
+<div class="textLayer" id="scale-custom" >
+    <span xmlns="http://www.w3.org/1999/xhtml" style="left: 193.201px; top: 107.155px; font-size: 19.9922px; font-family: serif; transform: scaleX(1.07362);">and Constantine </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1047.67px; top: 109.184px; font-size: 12.7404px; font-family: sans-serif; transform: scaleX(2.85888);">II </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 182.382px; top: 693.822px; font-size: 17.2482px; font-family: serif; transform: scaleX(0.867987);">9. </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 206.333px; top: 694.172px; font-size: 16.8562px; font-family: serif; transform: scaleX(1.14137);">Colosseum </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 296.651px; top: 694.172px; font-size: 16.8562px; font-family: serif; transform: scaleX(1.14152);">and </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 330.03px; top: 694.172px; font-size: 16.8562px; font-family: serif; transform: scaleX(1.12166);">(foreground) </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 432.146px; top: 694.172px; font-size: 16.8562px; font-family: serif; transform: scaleX(1.1726);">Temple </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 496.102px; top: 694.172px; font-size: 16.8562px; font-family: serif; transform: scaleX(1.23819);">ofVenus </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 569.485px; top: 694.172px; font-size: 16.8562px; font-family: serif; transform: scaleX(1.14152);">and </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 602.041px; top: 694.172px; font-size: 16.8562px; font-family: serif; transform: scaleX(1.15855);">Rome </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 178.168px; top: 1370.63px; font-size: 16.8562px; font-family: serif; transform: scaleX(0.954839);">10. </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 209.724px; top: 1370.63px; font-size: 16.8562px; font-family: serif; transform: scaleX(1.16222);">Forum, </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 272.229px; top: 1370.63px; font-size: 16.8562px; font-family: serif; transform: scaleX(1.16284);">looking </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 336.635px; top: 1370.63px; font-size: 16.8562px; font-family: serif; transform: scaleX(1.05498);">east </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 370.171px; top: 1370.63px; font-size: 16.8562px; font-family: serif; transform: scaleX(1.19575);">toward </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 430.716px; top: 1370.63px; font-size: 16.8562px; font-family: serif; transform: scaleX(1.12214);">Colosseum </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 602px; top: 1530.19px; font-size: 20.0002px; font-family: serif; transform: scaleX(1.00001);">28</span>
+</div>
+
+<img src="./img/page28.jpg" class="imgReference"/>
+
+<button class="btn previousPage" onclick="lastPage();">Previous Page</button>
+<button class="btn nextPage" onclick="nextPage();">Next Page</button>
+    
+<script>
+    function nextPage(){
+        var index = window.location.href.indexOf('page')+4; 
+        var currentPage = window.location.href.substring(index, window.location.href.indexOf('.', index)); 
+        window.location.href = window.location.href.substring(0, window.location.href.indexOf('page')+4)+(eval(currentPage)+1)+'.html';
+    }
+    function lastPage(){
+        var index = window.location.href.indexOf('page')+4; 
+        var currentPage = window.location.href.substring(index, window.location.href.indexOf('.', index)); 
+        window.location.href = window.location.href.substring(0, window.location.href.indexOf('page')+4)+(eval(currentPage)-1)+'.html';
+    }
+</script>
+
+
+</body>
+
+</html>

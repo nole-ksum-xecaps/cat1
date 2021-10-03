@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="./main.js"></script>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body class="has-zoom" style="/* position: absolute; left: calc(50% - 391.36px);  */">
+    
+<div class="textLayer" id="scale-custom" >
+    <span xmlns="http://www.w3.org/1999/xhtml" style="left: 277.696px; top: 1104.79px; font-size: 23.0002px; font-family: serif; transform: scaleX(0.826101);">Pig. </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 321.896px; top: 1106.45px; font-size: 20.8002px; font-family: sans-serif; transform: scaleX(0.781749);">9. </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 346.997px; top: 1104.79px; font-size: 23.0002px; font-family: serif; transform: scaleX(1.11337);">Antonio </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 439.078px; top: 1104.79px; font-size: 23.0002px; font-family: serif; transform: scaleX(1.09234);">Tempesta, </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 551.825px; top: 1104.79px; font-size: 23.0002px; font-family: serif; transform: scaleX(1.12578);">Detail </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 622.045px; top: 1104.79px; font-size: 23.0002px; font-family: serif; transform: scaleX(1.02075);">From  Birdseye </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 776.514px; top: 1104.79px; font-size: 23.0002px; font-family: serif; transform: scaleX(1.05162);">Plan </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 829.543px; top: 1104.79px; font-size: 23.0002px; font-family: serif; transform: scaleX(1.15709);">of </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 856.043px; top: 1104.79px; font-size: 23.0002px; font-family: serif; transform: scaleX(1.06696);">Rome, </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 930.444px; top: 1106.45px; font-size: 20.8002px; font-family: sans-serif; transform: scaleX(0.982362);">1593. </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 597px; top: 1530.19px; font-size: 20.0002px; font-family: serif; transform: scaleX(1.00001);">109</span>
+</div>
+
+<img src="./img/page109.jpg" class="imgReference"/>
+
+<button class="btn previousPage" onclick="lastPage();">Previous Page</button>
+<button class="btn nextPage" onclick="nextPage();">Next Page</button>
+    
+<script>
+    function nextPage(){
+        var index = window.location.href.indexOf('page')+4; 
+        var currentPage = window.location.href.substring(index, window.location.href.indexOf('.', index)); 
+        window.location.href = window.location.href.substring(0, window.location.href.indexOf('page')+4)+(eval(currentPage)+1)+'.html';
+    }
+    function lastPage(){
+        var index = window.location.href.indexOf('page')+4; 
+        var currentPage = window.location.href.substring(index, window.location.href.indexOf('.', index)); 
+        window.location.href = window.location.href.substring(0, window.location.href.indexOf('page')+4)+(eval(currentPage)-1)+'.html';
+    }
+</script>
+
+
+</body>
+
+</html>

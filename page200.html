@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="./main.js"></script>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body class="has-zoom" style="/* position: absolute; left: calc(50% - 391.36px);  */">
+    
+<div class="textLayer" id="scale-custom" >
+    <span xmlns="http://www.w3.org/1999/xhtml" style="left: 174.285px; top: 231.68px; font-size: 47.893px; font-family: serif; transform: scaleX(1.01731);">Map 10</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 196.665px; top: 142.6px; font-size: 17.2756px; font-family: sans-serif; transform: scaleX(1.03739);">Paris </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 242.238px; top: 142.6px; font-size: 17.2756px; font-family: sans-serif; transform: scaleX(1.05131);">City Centre </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 224.238px; top: 164.332px; font-size: 4.6828px; font-family: monospace; transform: scaleX(3.50758);">~1</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 245.311px; top: 164.332px; font-size: 4.6828px; font-family: monospace;">:</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 248.578px; top: 164.332px; font-size: 4.6828px; font-family: monospace; transform: scaleX(1.08083);">20000(1C.•200111) </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 175.335px; top: 1058.13px; font-size: 6.8418px; font-family: sans-serif; transform: scaleX(1.15323);">.,# </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 168.476px; top: 1039px; font-size: 35.2356px; font-family: sans-serif; transform: scaleX(0.794625);">.. </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 311.865px; top: 1029.23px; font-size: 51.9982px; font-family: serif; transform: scaleX(0.557753);">--</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 307.982px; top: 1036.78px; font-size: 47.209px; font-family: serif; transform: scaleX(0.833906);">--</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 53.8132px; top: 597px; font-size: 20.0002px; font-family: serif; transform: rotate(90deg) scaleX(1.00001);">200</span>
+</div>
+
+<img src="./img/page200.jpg" class="imgReference"/>
+
+<button class="btn previousPage" onclick="lastPage();">Previous Page</button>
+<button class="btn nextPage" onclick="nextPage();">Next Page</button>
+    
+<script>
+    function nextPage(){
+        var index = window.location.href.indexOf('page')+4; 
+        var currentPage = window.location.href.substring(index, window.location.href.indexOf('.', index)); 
+        window.location.href = window.location.href.substring(0, window.location.href.indexOf('page')+4)+(eval(currentPage)+1)+'.html';
+    }
+    function lastPage(){
+        var index = window.location.href.indexOf('page')+4; 
+        var currentPage = window.location.href.substring(index, window.location.href.indexOf('.', index)); 
+        window.location.href = window.location.href.substring(0, window.location.href.indexOf('page')+4)+(eval(currentPage)-1)+'.html';
+    }
+</script>
+
+
+</body>
+
+</html>

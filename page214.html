@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="./main.js"></script>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body class="has-zoom" style="/* position: absolute; left: calc(50% - 391.36px);  */">
+    
+<div class="textLayer" id="scale-custom" >
+    <span xmlns="http://www.w3.org/1999/xhtml" style="left: 176.553px; top: 226.191px; font-size: 48.013px; font-family: serif; transform: scaleX(1.0172);">Map 16</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 195.19px; top: 141.579px; font-size: 17.1476px; font-family: sans-serif; transform: scaleX(1.05179);">Paris </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 240.854px; top: 141.579px; font-size: 17.1476px; font-family: sans-serif; transform: scaleX(1.06418);">City Centre </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 222.815px; top: 163.21px; font-size: 4.6944px; font-family: monospace; transform: scaleX(3.50464);">~1</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 243.94px; top: 163.21px; font-size: 4.6944px; font-family: monospace;">:</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 247.216px; top: 163.21px; font-size: 4.6944px; font-family: monospace; transform: scaleX(1.07993);">20000(1C.•200111) </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1338.66px; top: 169.301px; font-size: 13.1444px; font-family: monospace; transform: scaleX(1.96687);">~ </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1358.58px; top: 163.651px; font-size: 21.0914px; font-family: serif; transform: scaleX(0.509591);">.......... </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1351.89px; top: 165.617px; font-size: 32.066px; font-family: serif; transform: scaleX(1.00019);">' </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1385.3px; top: 170.66px; font-size: 26.4072px; font-family: serif; transform: scaleX(0.472953);">..... </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1400.77px; top: 182.239px; font-size: 13.2036px; font-family: sans-serif; transform: scaleX(1.00183);">, </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1403.17px; top: 169.354px; font-size: 27.4364px; font-family: sans-serif; transform: scaleX(1.00113);">. </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1408.24px; top: 176.557px; font-size: 31.8944px; font-family: serif; transform: scaleX(0.475486);">.... </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1425.51px; top: 200.284px; font-size: 4.6944px; font-family: monospace; transform: scaleX(4.33906);">~ </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 310.662px; top: 1030.27px; font-size: 52.1284px; font-family: serif; transform: scaleX(0.557813);">--</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 306.769px; top: 1037.84px; font-size: 47.3272px; font-family: serif; transform: scaleX(0.833783);">--</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 53.8132px; top: 597px; font-size: 20.0002px; font-family: serif; transform: rotate(90deg) scaleX(1.00001);">214</span>
+</div>
+
+<img src="./img/page214.jpg" class="imgReference"/>
+
+<button class="btn previousPage" onclick="lastPage();">Previous Page</button>
+<button class="btn nextPage" onclick="nextPage();">Next Page</button>
+    
+<script>
+    function nextPage(){
+        var index = window.location.href.indexOf('page')+4; 
+        var currentPage = window.location.href.substring(index, window.location.href.indexOf('.', index)); 
+        window.location.href = window.location.href.substring(0, window.location.href.indexOf('page')+4)+(eval(currentPage)+1)+'.html';
+    }
+    function lastPage(){
+        var index = window.location.href.indexOf('page')+4; 
+        var currentPage = window.location.href.substring(index, window.location.href.indexOf('.', index)); 
+        window.location.href = window.location.href.substring(0, window.location.href.indexOf('page')+4)+(eval(currentPage)-1)+'.html';
+    }
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="./main.js"></script>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body class="has-zoom" style="/* position: absolute; left: calc(50% - 391.36px);  */">
+    
+<div class="textLayer" id="scale-custom" >
+    <span xmlns="http://www.w3.org/1999/xhtml" style="left: 953.701px; top: 1147.06px; font-size: 23.7786px; font-family: serif; transform: rotate(-90deg) scaleX(0.910462);">Fig. </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 953.701px; top: 1099.99px; font-size: 23.7786px; font-family: serif; transform: rotate(-90deg) scaleX(0.821699);">1. </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 953.702px; top: 1073.81px; font-size: 23.7786px; font-family: serif; transform: rotate(-90deg) scaleX(1.12847);">Giovannantomo </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 953.701px; top: 895.326px; font-size: 23.7786px; font-family: serif; transform: rotate(-90deg) scaleX(1.07758);">Dosio, </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 953.701px; top: 818.997px; font-size: 23.7786px; font-family: serif; transform: rotate(-90deg) scaleX(1.07253);">Birdseye </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 953.701px; top: 722.479px; font-size: 23.7786px; font-family: serif; transform: rotate(-90deg) scaleX(1.0586);">Plan </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 953.701px; top: 669.113px; font-size: 23.7786px; font-family: serif; transform: rotate(-90deg) scaleX(1.17819);">of </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 953.701px; top: 643.672px; font-size: 23.7786px; font-family: serif; transform: rotate(-90deg) scaleX(1.09648);">Rome, </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 953.702px; top: 566.066px; font-size: 23.7786px; font-family: serif; transform: rotate(-90deg) scaleX(1.07386);">1562. London, </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 953.702px; top: 409.698px; font-size: 23.7786px; font-family: serif; transform: rotate(-90deg) scaleX(0.989675);">R.1.B.A. </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 981.982px; top: 1137.68px; font-size: 23.568px; font-family: serif; transform: rotate(-90deg) scaleX(0.984616);">12, </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 981.794px; top: 1097.59px; font-size: 23.7786px; font-family: serif; transform: rotate(-90deg) scaleX(1.06945);">Piazza </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 981.794px; top: 1022.14px; font-size: 23.7786px; font-family: serif; transform: rotate(-90deg) scaleX(1.10111);">del </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 981.794px; top: 981.498px; font-size: 23.7786px; font-family: serif; transform: rotate(-90deg) scaleX(1.0462);">Popolo; </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 981.982px; top: 891.476px; font-size: 23.568px; font-family: serif; transform: rotate(-90deg) scaleX(0.984616);">14, </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 981.794px; top: 850.61px; font-size: 23.7786px; font-family: serif; transform: rotate(-90deg) scaleX(1.07718);">Via  Paola/Babuino; </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 981.982px; top: 633.046px; font-size: 23.568px; font-family: serif; transform: rotate(-90deg) scaleX(0.984616);">15, </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 981.794px; top: 591.57px; font-size: 23.7786px; font-family: serif; transform: rotate(-90deg) scaleX(0.977042);">Via </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 981.794px; top: 547.211px; font-size: 23.7786px; font-family: serif; transform: rotate(-90deg) scaleX(1.17024);">Trinitatis/Condotti. </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 597px; top: 1530.18px; font-size: 20.0002px; font-family: serif; transform: scaleX(1.00001);">102</span>
+</div>
+
+<img src="./img/page102.jpg" class="imgReference"/>
+
+<button class="btn previousPage" onclick="lastPage();">Previous Page</button>
+<button class="btn nextPage" onclick="nextPage();">Next Page</button>
+    
+<script>
+    function nextPage(){
+        var index = window.location.href.indexOf('page')+4; 
+        var currentPage = window.location.href.substring(index, window.location.href.indexOf('.', index)); 
+        window.location.href = window.location.href.substring(0, window.location.href.indexOf('page')+4)+(eval(currentPage)+1)+'.html';
+    }
+    function lastPage(){
+        var index = window.location.href.indexOf('page')+4; 
+        var currentPage = window.location.href.substring(index, window.location.href.indexOf('.', index)); 
+        window.location.href = window.location.href.substring(0, window.location.href.indexOf('page')+4)+(eval(currentPage)-1)+'.html';
+    }
+</script>
+
+
+</body>
+
+</html>

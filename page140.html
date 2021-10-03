@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="./main.js"></script>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body class="has-zoom" style="/* position: absolute; left: calc(50% - 391.36px);  */">
+    
+<div class="textLayer" id="scale-custom" >
+    <span xmlns="http://www.w3.org/1999/xhtml" style="left: 143.994px; top: 167.018px; font-size: 19.9202px; font-family: monospace; transform: scaleX(1.00382);">The Project Gutenberg EBook of Father Goriot, by Honore de Balzac </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 143.994px; top: 212.396px; font-size: 19.9202px; font-family: monospace; transform: scaleX(1.00382);">This eBook is for the use of anyone anywhere at no cost and with </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 143.994px; top: 235.205px; font-size: 19.9202px; font-family: monospace; transform: scaleX(1.00382);">almost no restrictions whatsoever.  You may copy it, give it away or </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 143.994px; top: 257.774px; font-size: 19.9202px; font-family: monospace; transform: scaleX(1.00385);">re-  use it under the terms of the Project Gutenberg License included </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 143.994px; top: 280.344px; font-size: 19.9202px; font-family: monospace; transform: scaleX(1.0038);">with this eBook or online at www.gutenberg.org </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 143.994px; top: 348.531px; font-size: 19.9202px; font-family: monospace; transform: scaleX(1.00371);">Title: Father Goriot </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 143.994px; top: 393.67px; font-size: 19.9202px; font-family: monospace; transform: scaleX(1.00374);">Author: Honore de Balzac </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 143.994px; top: 439.048px; font-size: 19.9202px; font-family: monospace; transform: scaleX(1.00375);">Translator: Ellen Marriage </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 143.994px; top: 484.426px; font-size: 19.9202px; font-family: monospace; transform: scaleX(1.0038);">Release Date: February 22, 2010 [EBook #1237] </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 143.994px; top: 506.996px; font-size: 19.9202px; font-family: monospace; transform: scaleX(1.00377);">Last Updated: November 22, 2016 </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 143.994px; top: 552.374px; font-size: 19.9202px; font-family: monospace; transform: scaleX(1.00369);">Language: English </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 143.994px; top: 597.753px; font-size: 19.9202px; font-family: monospace; transform: scaleX(1.00437);">Character set encoding: UTF-8 </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 143.974px; top: 643.131px; font-size: 19.9202px; font-family: monospace; transform: scaleX(1.00382);">*** START OF THIS PROJECT GUTENBERG EBOOK FATHER GORIOT *** </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 143.974px; top: 756.457px; font-size: 19.9202px; font-family: monospace; transform: scaleX(1.00378);">Produced by Dagny, and David Widger </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 410.877px; top: 977.229px; font-size: 48.0006px; font-family: serif; transform: scaleX(1.08442);">FATHER GORIOT</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 472.798px; top: 1115.12px; font-size: 36.0004px; font-family: serif; transform: scaleX(1.04588);">Honore De Balzac</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 439.918px; top: 1239.92px; font-size: 27.1204px; font-family: serif; transform: scaleX(1.08431);">Translated by Ellen Marriage</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 143.994px; top: 1350.22px; font-size: 19.9202px; font-family: monospace; transform: scaleX(1.00381);">     To the great and illustrious Geoffroy Saint-</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 731.999px; top: 1350.22px; font-size: 19.9202px; font-family: monospace; transform: scaleX(1.00368);">Hilaire, a token </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 143.994px; top: 1372.79px; font-size: 19.9202px; font-family: monospace; transform: scaleX(1.0038);">     of admiration for his works and genius. </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 143.994px; top: 1395.36px; font-size: 19.9202px; font-family: monospace; transform: scaleX(1.00382);">                                                      DE BALZAC. </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 597px; top: 1530.19px; font-size: 20.0002px; font-family: serif; transform: scaleX(1.00001);">140</span>
+</div>
+
+<img src="./img/page140.jpg" class="imgReference"/>
+
+<button class="btn previousPage" onclick="lastPage();">Previous Page</button>
+<button class="btn nextPage" onclick="nextPage();">Next Page</button>
+    
+<script>
+    function nextPage(){
+        var index = window.location.href.indexOf('page')+4; 
+        var currentPage = window.location.href.substring(index, window.location.href.indexOf('.', index)); 
+        window.location.href = window.location.href.substring(0, window.location.href.indexOf('page')+4)+(eval(currentPage)+1)+'.html';
+    }
+    function lastPage(){
+        var index = window.location.href.indexOf('page')+4; 
+        var currentPage = window.location.href.substring(index, window.location.href.indexOf('.', index)); 
+        window.location.href = window.location.href.substring(0, window.location.href.indexOf('page')+4)+(eval(currentPage)-1)+'.html';
+    }
+</script>
+
+
+</body>
+
+</html>

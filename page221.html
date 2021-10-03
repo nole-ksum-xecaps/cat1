@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="./main.js"></script>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body class="has-zoom" style="/* position: absolute; left: calc(50% - 391.36px);  */">
+    
+<div class="textLayer" id="scale-custom" >
+    <span xmlns="http://www.w3.org/1999/xhtml" style="left: 117.625px; top: 107.592px; font-size: 53.2004px; font-family: serif; transform: scaleX(1.01718);">Map 18</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 137.689px; top: 1221.93px; font-size: 30.4004px; font-family: serif; transform: scaleX(1.03651);">This Map gives you a sense of how </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 137.689px; top: 1258.41px; font-size: 30.4004px; font-family: serif; transform: scaleX(1.0381);">Haussmann changed the traffic </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 137.689px; top: 1294.89px; font-size: 30.4004px; font-family: serif; transform: scaleX(1.04055);">pattern and therefore the organizaiton </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 137.689px; top: 1331.38px; font-size: 30.4004px; font-family: serif; transform: scaleX(1.03942);">of Paris.  The earlier maps give you </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 137.689px; top: 1367.86px; font-size: 30.4004px; font-family: serif; transform: scaleX(1.0412);">the pieces, tied to Pinkney's text, with </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 137.689px; top: 1404.34px; font-size: 30.4004px; font-family: serif; transform: scaleX(1.04122);">a bit more detail.</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 597px; top: 1530.19px; font-size: 20.0002px; font-family: serif; transform: scaleX(1.00001);">221</span>
+</div>
+
+<img src="./img/page221.jpg" class="imgReference"/>
+
+<button class="btn previousPage" onclick="lastPage();">Previous Page</button>
+<button class="btn nextPage" onclick="nextPage();">Next Page</button>
+    
+<script>
+    function nextPage(){
+        var index = window.location.href.indexOf('page')+4; 
+        var currentPage = window.location.href.substring(index, window.location.href.indexOf('.', index)); 
+        window.location.href = window.location.href.substring(0, window.location.href.indexOf('page')+4)+(eval(currentPage)+1)+'.html';
+    }
+    function lastPage(){
+        var index = window.location.href.indexOf('page')+4; 
+        var currentPage = window.location.href.substring(index, window.location.href.indexOf('.', index)); 
+        window.location.href = window.location.href.substring(0, window.location.href.indexOf('page')+4)+(eval(currentPage)-1)+'.html';
+    }
+</script>
+
+
+</body>
+
+</html>

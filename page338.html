@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="./main.js"></script>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body class="has-zoom" style="/* position: absolute; left: calc(50% - 391.36px);  */">
+    
+<div class="textLayer" id="scale-custom" >
+    <span xmlns="http://www.w3.org/1999/xhtml" style="left: 367.986px; top: 256.061px; font-size: 14.0128px; font-family: sans-serif; transform: scaleX(0.973976);">PI;IyCJrounds </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 265.356px; top: 382.885px; font-size: 14.0128px; font-family: sans-serif; transform: scaleX(1.12026);">Nations </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 324.527px; top: 382.885px; font-size: 14.0128px; font-family: sans-serif; transform: scaleX(1.07223);">Headquarters </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 254.351px; top: 419.417px; font-size: 14.0128px; font-family: sans-serif; transform: scaleX(1.06963);">Stadium </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 215.606px; top: 494.357px; font-size: 14.0128px; font-family: sans-serif; transform: scaleX(1.08316);">Jones </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 262.689px; top: 494.357px; font-size: 14.0128px; font-family: sans-serif; transform: scaleX(1.02802);">Beach </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1000.35px; top: 148.059px; font-size: 14.0128px; font-family: sans-serif; transform: scaleX(1.00091);">N </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1151.41px; top: 145.761px; font-size: 14.0128px; font-family: sans-serif; transform: scaleX(1.00091);">N </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1246.28px; top: 146.931px; font-size: 8.5942px; font-family: serif; transform: scaleX(1.56388);">(} </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1018.68px; top: 663.867px; font-size: 16.8158px; font-family: serif; transform: scaleX(1.00095);">N </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1083.93px; top: 663.867px; font-size: 16.8158px; font-family: serif; transform: scaleX(1.00095);">A </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 53.8132px; top: 597px; font-size: 20.0002px; font-family: serif; transform: rotate(90deg) scaleX(1.00001);">338</span>
+</div>
+
+<img src="./img/page338.jpg" class="imgReference"/>
+
+<button class="btn previousPage" onclick="lastPage();">Previous Page</button>
+<button class="btn nextPage" onclick="nextPage();">Next Page</button>
+    
+<script>
+    function nextPage(){
+        var index = window.location.href.indexOf('page')+4; 
+        var currentPage = window.location.href.substring(index, window.location.href.indexOf('.', index)); 
+        window.location.href = window.location.href.substring(0, window.location.href.indexOf('page')+4)+(eval(currentPage)+1)+'.html';
+    }
+    function lastPage(){
+        var index = window.location.href.indexOf('page')+4; 
+        var currentPage = window.location.href.substring(index, window.location.href.indexOf('.', index)); 
+        window.location.href = window.location.href.substring(0, window.location.href.indexOf('page')+4)+(eval(currentPage)-1)+'.html';
+    }
+</script>
+
+
+</body>
+
+</html>

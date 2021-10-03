@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="./main.js"></script>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body class="has-zoom" style="/* position: absolute; left: calc(50% - 391.36px);  */">
+    
+<div class="textLayer" id="scale-custom" >
+    <span xmlns="http://www.w3.org/1999/xhtml" style="left: 166.377px; top: 240.37px; font-size: 48.013px; font-family: serif; transform: scaleX(0.998332);">Map 1</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1408.24px; top: 693.697px; font-size: 30.5224px; font-family: serif; transform: scaleX(0.484876);">...... </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1416.35px; top: 690.231px; font-size: 43.212px; font-family: sans-serif; transform: scaleX(1.00081);">. </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1417.12px; top: 728.823px; font-size: 12.1748px; font-family: serif; transform: scaleX(1.19821);">! ·-</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1420.67px; top: 733.71px; font-size: 14.0612px; font-family: serif; transform: scaleX(0.960153);">o-</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1405.79px; top: 746.717px; font-size: 12.675px; font-family: monospace; transform: scaleX(1.42162);">~-~ </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1415.77px; top: 753.615px; font-size: 22.4632px; font-family: sans-serif; transform: scaleX(1.00056);">• </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1415.72px; top: 758.029px; font-size: 24.1782px; font-family: serif; transform: scaleX(1.00575);">•a </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1398.36px; top: 771.923px; font-size: 23.4922px; font-family: sans-serif; transform: scaleX(1.09193);">=I </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1433.32px; top: 771.923px; font-size: 23.4922px; font-family: sans-serif; transform: scaleX(1.00094);">. </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1393.73px; top: 792.065px; font-size: 18.3478px; font-family: sans-serif; transform: scaleX(1.00168);">I </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1414.89px; top: 786.432px; font-size: 18.3478px; font-family: sans-serif; transform: scaleX(1.00118);">• </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1429.04px; top: 788.147px; font-size: 16.4618px; font-family: sans-serif; transform: scaleX(1.00113);">f </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1414.45px; top: 801.589px; font-size: 13.5468px; font-family: sans-serif; transform: scaleX(0.991198);">r  ·' </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1392.89px; top: 803.461px; font-size: 13.0322px; font-family: sans-serif; transform: scaleX(1.00188);">: </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1413.75px; top: 774.46px; font-size: 45.7842px; font-family: serif;">.</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1422.32px; top: 774.46px; font-size: 45.7842px; font-family: serif; transform: scaleX(0.334149);">.. </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1430.12px; top: 778.159px; font-size: 40.9824px; font-family: sans-serif; transform: scaleX(1.00094);">, </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1390.58px; top: 807.751px; font-size: 22.2918px; font-family: sans-serif; transform: scaleX(1.00047);">i </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1436.63px; top: 807.751px; font-size: 22.2918px; font-family: sans-serif; transform: scaleX(1.00108);">. </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1392.19px; top: 810.505px; font-size: 34.295px; font-family: serif; transform: scaleX(0.708942);">,.,, </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 53.8132px; top: 597px; font-size: 20.0002px; font-family: serif; transform: rotate(90deg) scaleX(1.00001);">180</span>
+</div>
+
+<img src="./img/page180.jpg" class="imgReference"/>
+
+<button class="btn previousPage" onclick="lastPage();">Previous Page</button>
+<button class="btn nextPage" onclick="nextPage();">Next Page</button>
+    
+<script>
+    function nextPage(){
+        var index = window.location.href.indexOf('page')+4; 
+        var currentPage = window.location.href.substring(index, window.location.href.indexOf('.', index)); 
+        window.location.href = window.location.href.substring(0, window.location.href.indexOf('page')+4)+(eval(currentPage)+1)+'.html';
+    }
+    function lastPage(){
+        var index = window.location.href.indexOf('page')+4; 
+        var currentPage = window.location.href.substring(index, window.location.href.indexOf('.', index)); 
+        window.location.href = window.location.href.substring(0, window.location.href.indexOf('page')+4)+(eval(currentPage)-1)+'.html';
+    }
+</script>
+
+
+</body>
+
+</html>

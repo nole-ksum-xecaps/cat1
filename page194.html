@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="./main.js"></script>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body class="has-zoom" style="/* position: absolute; left: calc(50% - 391.36px);  */">
+    
+<div class="textLayer" id="scale-custom" >
+    <span xmlns="http://www.w3.org/1999/xhtml" style="left: 181.641px; top: 238.359px; font-size: 48.013px; font-family: serif; transform: scaleX(1.01711);">Map 8</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 162.438px; top: 243.79px; font-size: 21.4344px; font-family: sans-serif; transform: scaleX(0.433373);">... </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 153.453px; top: 251.664px; font-size: 16.6332px; font-family: serif; transform: scaleX(0.87314);">....._ </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 713.2px; top: 1058.16px; font-size: 24.0068px; font-family: serif; transform: scaleX(0.957837);">j.._ </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 754.303px; top: 1041.58px; font-size: 31.5514px; font-family: serif; transform: scaleX(0.479576);">..... </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 53.8132px; top: 597px; font-size: 20.0002px; font-family: serif; transform: rotate(90deg) scaleX(1.00001);">194</span>
+</div>
+
+<img src="./img/page194.jpg" class="imgReference"/>
+
+<button class="btn previousPage" onclick="lastPage();">Previous Page</button>
+<button class="btn nextPage" onclick="nextPage();">Next Page</button>
+    
+<script>
+    function nextPage(){
+        var index = window.location.href.indexOf('page')+4; 
+        var currentPage = window.location.href.substring(index, window.location.href.indexOf('.', index)); 
+        window.location.href = window.location.href.substring(0, window.location.href.indexOf('page')+4)+(eval(currentPage)+1)+'.html';
+    }
+    function lastPage(){
+        var index = window.location.href.indexOf('page')+4; 
+        var currentPage = window.location.href.substring(index, window.location.href.indexOf('.', index)); 
+        window.location.href = window.location.href.substring(0, window.location.href.indexOf('page')+4)+(eval(currentPage)-1)+'.html';
+    }
+</script>
+
+
+</body>
+
+</html>

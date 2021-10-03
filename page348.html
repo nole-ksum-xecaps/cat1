@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="./main.js"></script>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body class="has-zoom" style="/* position: absolute; left: calc(50% - 391.36px);  */">
+    
+<div class="textLayer" id="scale-custom" >
+    <span xmlns="http://www.w3.org/1999/xhtml" style="left: 597.2px; top: 1530.19px; font-size: 20.0002px; font-family: serif; transform: scaleX(1.00001);">348</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 335.936px; top: 241.044px; font-size: 16.2px; font-family: serif; transform: scaleX(1.00076);">I </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 346.515px; top: 241.044px; font-size: 16.2px; font-family: serif; transform: scaleX(1.00061);">• </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 356.176px; top: 237.301px; font-size: 20.4px; font-family: serif; transform: scaleX(0.856262);">rti </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 379.936px; top: 236.767px; font-size: 21px; font-family: serif; transform: scaleX(0.711711);">·i1 </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 401.716px; top: 237.123px; font-size: 20.6px; font-family: serif; transform: scaleX(0.683888);">·1t" </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 335.376px; top: 263.872px; font-size: 19.4px; font-family: serif; transform: scaleX(1.00047);">r </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 402.811px; top: 263.872px; font-size: 19.4px; font-family: serif; transform: scaleX(1.03634);">al </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 333.376px; top: 331.582px; font-size: 18.2px; font-family: serif; transform: scaleX(1.18536);">NOTES </span>
+</div>
+
+<img src="./img/page348.jpg" class="imgReference"/>
+
+<button class="btn previousPage" onclick="lastPage();">Previous Page</button>
+<button class="btn nextPage" onclick="nextPage();">Next Page</button>
+    
+<script>
+    function nextPage(){
+        var index = window.location.href.indexOf('page')+4; 
+        var currentPage = window.location.href.substring(index, window.location.href.indexOf('.', index)); 
+        window.location.href = window.location.href.substring(0, window.location.href.indexOf('page')+4)+(eval(currentPage)+1)+'.html';
+    }
+    function lastPage(){
+        var index = window.location.href.indexOf('page')+4; 
+        var currentPage = window.location.href.substring(index, window.location.href.indexOf('.', index)); 
+        window.location.href = window.location.href.substring(0, window.location.href.indexOf('page')+4)+(eval(currentPage)-1)+'.html';
+    }
+</script>
+
+
+</body>
+
+</html>

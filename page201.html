@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="./main.js"></script>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body class="has-zoom" style="/* position: absolute; left: calc(50% - 391.36px);  */">
+    
+<div class="textLayer" id="scale-custom" >
+    <span xmlns="http://www.w3.org/1999/xhtml" style="left: 175.281px; top: 231.999px; font-size: 48.013px; font-family: serif; transform: scaleX(1.0296);">Map 11</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 195.173px; top: 141.423px; font-size: 17.319px; font-family: sans-serif; transform: scaleX(1.03812);">Paris </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 240.86px; top: 141.423px; font-size: 17.319px; font-family: sans-serif; transform: scaleX(1.05205);">City Centre </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 222.815px; top: 163.21px; font-size: 4.6944px; font-family: monospace; transform: scaleX(1.50198);">se:-.1.20000(1CM•~ </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 166.879px; top: 1038.51px; font-size: 37.0386px; font-family: sans-serif; transform: scaleX(0.788735);">.. </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1408.24px; top: 693.85px; font-size: 30.3512px; font-family: serif; transform: scaleX(0.497996);">...... </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1416.35px; top: 690.231px; font-size: 43.212px; font-family: sans-serif; transform: scaleX(1.00081);">. </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1417.23px; top: 729.424px; font-size: 11.832px; font-family: sans-serif; transform: scaleX(1.18427);">! ·-</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1420.67px; top: 733.71px; font-size: 14.0612px; font-family: serif; transform: scaleX(0.960153);">o-</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1405.58px; top: 727.518px; font-size: 38.925px; font-family: serif;">=</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1418.48px; top: 727.518px; font-size: 38.925px; font-family: serif; transform: scaleX(0.532058);">·,_ </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1415.72px; top: 752.715px; font-size: 24.3498px; font-family: serif; transform: scaleX(1.00073);">• </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1415.72px; top: 758.029px; font-size: 24.1782px; font-family: serif; transform: scaleX(1.00575);">•a </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1398.36px; top: 771.923px; font-size: 23.4922px; font-family: sans-serif; transform: scaleX(1.09193);">=I </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1433.32px; top: 771.923px; font-size: 23.4922px; font-family: sans-serif; transform: scaleX(1.00094);">. </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1393.73px; top: 792.065px; font-size: 18.3478px; font-family: sans-serif; transform: scaleX(1.00168);">I </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1414.89px; top: 788.78px; font-size: 18.3478px; font-family: sans-serif; transform: scaleX(1.00118);">• </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1428.94px; top: 788.78px; font-size: 18.3478px; font-family: sans-serif; transform: scaleX(1.00168);">I </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1392.79px; top: 799.124px; font-size: 19.3768px; font-family: sans-serif; transform: scaleX(1.08252);">:  J.;\ </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1390.58px; top: 808.217px; font-size: 21.7774px; font-family: sans-serif; transform: scaleX(1.00054);">i </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1436.66px; top: 808.217px; font-size: 21.7774px; font-family: sans-serif; transform: scaleX(1.00114);">. </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 1392.19px; top: 809.763px; font-size: 35.6668px; font-family: serif; transform: scaleX(0.681604);">,.,, </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 53.8132px; top: 597px; font-size: 20.0002px; font-family: serif; transform: rotate(90deg) scaleX(1.00001);">201</span>
+</div>
+
+<img src="./img/page201.jpg" class="imgReference"/>
+
+<button class="btn previousPage" onclick="lastPage();">Previous Page</button>
+<button class="btn nextPage" onclick="nextPage();">Next Page</button>
+    
+<script>
+    function nextPage(){
+        var index = window.location.href.indexOf('page')+4; 
+        var currentPage = window.location.href.substring(index, window.location.href.indexOf('.', index)); 
+        window.location.href = window.location.href.substring(0, window.location.href.indexOf('page')+4)+(eval(currentPage)+1)+'.html';
+    }
+    function lastPage(){
+        var index = window.location.href.indexOf('page')+4; 
+        var currentPage = window.location.href.substring(index, window.location.href.indexOf('.', index)); 
+        window.location.href = window.location.href.substring(0, window.location.href.indexOf('page')+4)+(eval(currentPage)-1)+'.html';
+    }
+</script>
+
+
+</body>
+
+</html>

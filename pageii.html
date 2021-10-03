@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="./main.js"></script>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body class="has-zoom" style="/* position: absolute; left: calc(50% - 391.36px);  */">
+    
+<div class="textLayer" id="scale-custom" >
+    <span xmlns="http://www.w3.org/1999/xhtml" style="left: 552.119px; top: 433.641px; font-size: 39.9604px; font-family: serif; transform: scaleX(1.20937);">CAT I</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 344.637px; top: 481.856px; font-size: 72.0008px; font-family: serif; transform: scaleX(1.26246);">Culture, Art &amp; </span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 368.997px; top: 568.377px; font-size: 72.0008px; font-family: serif; transform: scaleX(1.27606);">Technology I</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 443.038px; top: 1026.21px; font-size: 39.9604px; font-family: serif; transform: scaleX(1.13187);">Stanley Chodorow</span><span xmlns="http://www.w3.org/1999/xhtml" style="left: 280.436px; top: 1074.33px; font-size: 39.9604px; font-family: serif; transform: scaleX(1.13368);">University of California - San Diego</span>
+</div>
+
+<img src="./img/pageii.jpg" class="imgReference"/>
+
+<button class="btn previousPage" onclick="window.location.href = window.location.href.substring(0, window.location.href.indexOf('page'))+'index.html';">Previous Page</button>
+<button class="btn nextPage" onclick="window.location.href = window.location.href.substring(0, window.location.href.indexOf('page')+4)+'iii.html';">Next Page</button>
+    
+<script>
+    function nextPage(){
+        var index = window.location.href.indexOf('page')+4; 
+        var currentPage = window.location.href.substring(index, window.location.href.indexOf('.', index)); 
+        window.location.href = window.location.href.substring(0, window.location.href.indexOf('page')+4)+(eval(currentPage)+1)+'.html';
+    }
+    function lastPage(){
+        var index = window.location.href.indexOf('page')+4; 
+        var currentPage = window.location.href.substring(index, window.location.href.indexOf('.', index)); 
+        window.location.href = window.location.href.substring(0, window.location.href.indexOf('page')+4)+(eval(currentPage)-1)+'.html';
+    }
+</script>
+
+
+</body>
+
+</html>
